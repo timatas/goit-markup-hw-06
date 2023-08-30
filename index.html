@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="header-container container">
         <nav class="header-nav nav">
           <a href="./index.html" class="logo link"
@@ -55,8 +55,18 @@
             </li>
           </ul>
         </address>
+        <!-- Burger button -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
+        <!-- --------------- -->
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- main-section -->
@@ -568,7 +578,88 @@
     <!-- </form> 
       </div>
     </div>-->
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="modal-btn js-close-menu">
+        <svg class="modal-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#close-menu"></use>
+        </svg>
+      </button>
 
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link current link" href="./index.html"
+            >Studio</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Contacts</a>
+        </li>
+      </ul>
+
+      <!-- Address in Mobile menu -->
+      <address class="link">
+        <ul class="address-mobile-list list">
+          <li class="address-mobile-tel">
+            <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+          </li>
+          <li class="address-mobile-emeil">
+            <a href="mailto:info@devstudio.com" class="link"
+              >info@devstudio.com
+            </a>
+          </li>
+        </ul>
+      </address>
+
+      <!-- Mobile Social media -->
+      <ul class="social-list-footer list">
+        <li class="social-footer-item">
+          <a
+            class="social-footer-link link"
+            href="https://instagram.com/"
+            target="_blank"
+            ><svg class="social-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use></svg
+          ></a>
+        </li>
+        <li class="social-footer-item">
+          <a
+            class="social-footer-link link"
+            href="https://twitter.com/"
+            target="_blank"
+            ><svg class="social-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use></svg
+          ></a>
+        </li>
+        <li class="social-footer-item">
+          <a
+            class="social-footer-link link"
+            href="https://facebook.com/"
+            target="_blank"
+            ><svg class="social-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use></svg
+          ></a>
+        </li>
+        <li class="social-footer-item">
+          <a
+            class="social-footer-link link"
+            href="https://ua.linkedin.com/"
+            target="_blank"
+            ><svg class="social-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use></svg
+          ></a>
+        </li>
+      </ul>
+    </div>
     <!-- <script src="./js/modal.js"></script> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
