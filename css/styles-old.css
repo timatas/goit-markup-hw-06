@@ -100,16 +100,6 @@
 
 /* =========================== */
 /* =====section-two===== */
-.section-two-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 264px;
-  height: 112px;
-  margin-bottom: 8px;
-  border-radius: 4px;
-  background-color: var(--cloud);
-}
 
 /* ================================= */
 /* =====section-three============ */
@@ -117,71 +107,9 @@
 /* ================================= */
 /* ======team-section=============== */
 
-.social-list {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  align-items: center;
-}
-.social-list-item {
-  transition: background-color var(--animation);
-}
-.social-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background-color: var(--iris);
-  border-radius: 50%;
-  color: var(--cloud);
-  transition: background-color var(--animation);
-}
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--ocean);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  border-radius: 50%;
-}
-.social-list-icon {
-  fill: currentColor;
-}
 /* ================================= */
 /* ======customers-section=============== */
-.customers-section {
-  background-color: var(--white);
-  padding: 120px 0;
-}
-.customers-section-list {
-  display: flex;
-  gap: 24px;
-}
-.customers-list-item {
-  width: calc((100% - 120px) / 6);
-}
-.customers-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 168px;
-  height: 88px;
-  border: 1px solid var(--lightslate);
-  border-radius: 4px;
-  color: var(--lightslate);
-  transition: color var(--animation), border-color var(--animation);
-}
-.customers-icon {
-  fill: currentColor;
-}
 
-.customers-item:hover,
-.customers-item:focus {
-  fill: var(--ocean);
-  border-color: var(--ocean);
-  color: var(--ocean);
-}
 /* ================================ */
 /* =====Buttons====== */
 .buttons-section {
