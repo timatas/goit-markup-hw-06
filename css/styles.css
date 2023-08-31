@@ -941,6 +941,12 @@ section-two-icon .buttons:focus {
   transform: translateX(-50%) translateY(-50%);
   transition: transform var(--animation);
 }
+
+@media only screen and (max-width: 767.98px) {
+  .modal {
+    width: calc(100% - 36px);
+  }
+}
 .modal-btn {
   background-color: var(--cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
