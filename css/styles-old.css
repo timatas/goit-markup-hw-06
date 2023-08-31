@@ -141,29 +141,7 @@ section-two-icon .buttons:focus {
 }
 /* ================================ */
 /* =====Footer styles============== */
-.foot-fon {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.footer-container {
-  align-items: baseline;
-}
-.logo-text {
-  margin-right: 120px;
-}
-.logo-footer {
-  display: inline-flex;
-  align-items: center;
-  margin-bottom: 16px;
-  margin-right: 76px;
-  color: var(--iris);
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 1.17;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
-}
+
 .studio-footer {
 }
 .footer-text {
@@ -178,74 +156,6 @@ section-two-icon .buttons:focus {
 }
 
 /* =====footer form============== */
-/.footer-button {
-  margin-left: auto;
-}
-.footer-form-label {
-}
-.footer-form {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-.footer-form-input {
-  width: 264px;
-  height: 40px;
-  padding-left: 16px;
-
-  font-size: 12px;
-  letter-spacing: 0.04em;
-  line-height: 1.5;
-  color: var(--white);
-
-  outline: transparent;
-  background-color: transparent;
-
-  border-radius: 4px;
-  border: 1px solid var(--white);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
-  transition: border-color var(--animation);
-}
-.footer-form-input:focus {
-  border-color: var(--ocean);
-}
-.footer-form-input::placeholder {
-  color: var(--white);
-}
-.footer-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  min-width: 165px;
-  height: 40px;
-  margin: 0 auto;
-
-  border-radius: 4px;
-  border: none;
-  font-family: inherit;
-  background: var(--iris);
-  color: var(--white);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-  transition: background-color var(--animation), color var(--animation),
-    box-shadow var(--animation);
-}
-.footer-btn-icon {
-  fill: var(--white);
-  margin-left: 16px;
-}
-
-.footer-btn:hover,
-.footer-btn:focus,
-.footer-btn:active {
-  background: var(--ocean);
-  color: var(--white);
-}
 
 /* ================================ */
 /* =====Modal window============== */
