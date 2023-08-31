@@ -147,10 +147,8 @@ section-two-icon .buttons:focus {
 .foot-fon {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: var(--grey);
 }
 .footer-container {
-  display: flex;
   align-items: baseline;
 }
 .logo-text {
@@ -170,24 +168,15 @@ section-two-icon .buttons:focus {
   text-transform: uppercase;
 }
 .studio-footer {
-  color: var(--cloud);
 }
 .footer-text {
   max-width: 264px;
-  margin: 0;
-  color: var(--cloud);
-  letter-spacing: 0.02em;
-  padding: 0;
 }
 .social-media {
   margin-right: 80px;
 }
 
 .social-text {
-  color: var(--white);
-  font-weight: 500;
-  letter-spacing: 0.32px;
-  margin-bottom: 16px;
   padding: 0;
 }
 
