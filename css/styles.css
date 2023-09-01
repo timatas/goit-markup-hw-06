@@ -78,6 +78,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 /* ==========All styles================ */
 .container {
@@ -456,7 +457,7 @@ img {
 /* ======team-section=============== */
 .team-section {
   background-color: var(--cloud);
-  margin: 0 auto;
+  margin: 0;
   padding: 96px 0;
 }
 .team-section-title {
