@@ -202,6 +202,11 @@ img {
   color: var(--slate);
   transition: color var(--animation);
 }
+@media only screen and (min-width: 768px) and (max-width: 1157.98) {
+  .contacts-link {
+    font-size: 12px;
+  }
+}
 .contacts-link.link:hover,
 .contacts-link.link:focus {
   color: var(--ocean);
@@ -793,6 +798,9 @@ section-two-icon .buttons:focus {
 @media only screen and (min-width: 1158px) {
   .logo-text {
     margin-right: 120px;
+  }
+  .social-media {
+    /*margin-right: 80px;*/
   }
 }
 .logo-footer {
