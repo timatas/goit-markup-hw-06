@@ -198,13 +198,14 @@ img {
 .contacts-link {
   display: block;
   padding: 0;
+  font-size: 12px;
   letter-spacing: 0.02em;
   color: var(--slate);
   transition: color var(--animation);
 }
-@media only screen and (min-width: 768px) and (max-width: 1157.98) {
+@media only screen and (min-width: 1158px) {
   .contacts-link {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 .contacts-link.link:hover,
@@ -235,8 +236,8 @@ img {
 }
 
 @media only screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
   .main-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -245,8 +246,10 @@ img {
       url(../images/people_mob@2x.jpg);
   }
 }
+
 @media only screen and (min-width: 768px) {
   .main-section {
+    max-width: 768px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -255,8 +258,8 @@ img {
   }
 }
 @media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  only screen and (min-width: 768px) and (min-resolution: 192dpi),
+  only screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .main-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -267,22 +270,24 @@ img {
 }
 @media only screen and (min-width: 1158px) {
   .main-section {
+    /* max-width: 1440px; */
+    padding: 188px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people_desk@1x.jpg);
+      url(../images/people-office_desk@1x.jpg);
   }
 }
 @media only screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  only screen and (min-width: 1158px) and (min-resolution: 192dpi),
+  only screen and (min-width: 1158px) and (min-resolution: 2dppx) {
   .main-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people_desk@2x.jpg);
+      url(../images/people-office_desk@2x.jpg);
   }
 }
 
@@ -324,14 +329,6 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .main-section {
-    max-width: 768px;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/main-bg-tab.jpg);
-  }
   .main-section-title {
     max-width: 496px;
     margin: 0 auto 36px;
@@ -341,15 +338,6 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
-  .main-section {
-    max-width: 1440px;
-    padding: 188px 0;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office.jpg);
-  }
   .main-section-title {
     margin: 0 auto 48px;
   }
@@ -489,7 +477,10 @@ img {
   flex-wrap: wrap;
   text-align: center;
   gap: 72px;
+  align-items: center;
+  justify-content: center;
 }
+
 @media only screen and (min-width: 768px) {
   .team-section-list {
     max-width: 768px;
@@ -518,7 +509,7 @@ img {
 }
 @media only screen and (min-width: 768px) {
   .team-section-item {
-    width: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+    /* width: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items)); */
     height: 428px;
   }
 }
@@ -619,7 +610,10 @@ img {
   border-color: var(--ocean);
   color: var(--ocean);
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1157.98) {
+  .container {
+    width: 552px;
+  }
   .customers-section-list {
     gap: 72px 24px;
     --items: 3;
@@ -800,7 +794,6 @@ section-two-icon .buttons:focus {
     margin-right: 120px;
   }
   .social-media {
-    /*margin-right: 80px;*/
   }
 }
 .logo-footer {
@@ -1053,7 +1046,6 @@ section-two-icon .buttons:focus {
 /* Modal form */
 .modal-title {
   display: block;
-  width: 360px;
   margin-bottom: 16px;
   font-size: 16px;
   font-weight: 500;
