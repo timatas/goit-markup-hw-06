@@ -1,0 +1,207 @@
+/* =====Footer styles============== */
+.foot-fon {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: var(--grey);
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px;
+}
+
+@media only screen and (min-width: 767px) {
+  .footer-container {
+    max-width: 584px;
+    gap: 72px 24px;
+    justify-content: flex-start;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .foot-fon {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-container {
+    max-width: 1158px;
+    flex-wrap: nowrap;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .logo-text,
+  .social-media,
+  .footer-button {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .logo-text {
+    margin-right: 120px;
+  }
+  .social-media {
+    margin-right: 80px;
+  }
+}
+.logo-footer {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 18px;
+  color: var(--iris);
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+.studio-footer {
+  color: var(--cloud);
+}
+.footer-text {
+  max-width: 268px;
+  color: var(--cloud);
+  letter-spacing: 0.02em;
+}
+
+.social-list-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.social-footer-item {
+  transition: background-color var(--animation);
+}
+
+.social-footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--iris);
+  border-radius: 50%;
+  color: var(--cloud);
+  transition: background-color var(--animation);
+}
+
+.social-text {
+  color: var(--white);
+  font-weight: 500;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+}
+
+.social-footer-link:hover,
+.social-footer-link:focus {
+  background-color: var(--green);
+}
+
+/* =====footer form============== */
+.footer-button {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .footer-button {
+    padding-left: 0;
+    justify-content: flex-start;
+  }
+}
+
+.footer-form-label {
+  max-width: 100%;
+}
+.footer-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+@media only screen and (max-width: 767.98px) {
+  .footer-form {
+    display: block;
+    text-align: center;
+  }
+}
+
+.footer-form-input {
+  width: 268px;
+  height: 40px;
+  padding-left: 16px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  color: var(--white);
+  outline: transparent;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid var(--white);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: border-color var(--animation);
+}
+@media only screen and (min-width: 768px) {
+  .footer-form-input {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .footer-form {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}
+.footer-form-input:focus {
+  border-color: var(--ocean);
+}
+.footer-form-input::placeholder {
+  color: var(--white);
+}
+.footer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-width: 165px;
+  height: 40px;
+  margin: 0 auto;
+
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  background: var(--iris);
+  color: var(--white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color var(--animation), color var(--animation),
+    box-shadow var(--animation);
+}
+.footer-btn-icon {
+  fill: var(--white);
+  margin-left: 16px;
+}
+
+.footer-btn:hover,
+.footer-btn:focus,
+.footer-btn:active {
+  background: var(--ocean);
+  color: var(--white);
+}
+
+/* ======Social media=======*/
+.social-list-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.social-footer-item {
+  transition: background-color var(--animation);
+}

@@ -83,7 +83,6 @@ img {
 /* ==========All styles================ */
 .container {
   max-width: 428px;
-  /* min-width: 320px; */
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -610,7 +609,7 @@ img {
   border-color: var(--ocean);
   color: var(--ocean);
 }
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
   .container {
     width: 552px;
   }
@@ -764,22 +763,7 @@ section-two-icon .buttons:focus {
   justify-content: center;
   gap: 72px;
 }
-@media only screen and (min-width: 768px) {
-  .footer-container {
-    max-width: 584px;
-    gap: 72px 24px;
-    justify-content: flex-start;
-  }
-}
-@media only screen and (min-width: 1158px) {
-  .footer-container {
-    max-width: 1158px;
-  }
-  .foot-fon {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-}
+
 @media only screen and (max-width: 767.98px) {
   .logo-text,
   .social-media,
@@ -787,15 +771,36 @@ section-two-icon .buttons:focus {
     display: block;
     text-align: center;
   }
+  .footer-form-label,
+  .footer-form-input {
+    max-width: 100%;
+  }
 }
 
+@media only screen and (min-width: 767px) {
+  .footer-container {
+    max-width: 584px;
+    gap: 72px 24px;
+    justify-content: flex-start;
+  }
+}
 @media only screen and (min-width: 1158px) {
+  .foot-fon {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-container {
+    max-width: 1158px;
+    flex-wrap: nowrap;
+  }
   .logo-text {
     margin-right: 120px;
   }
-  .social-media {
+  .footer-button {
+    margin-left: auto;
   }
 }
+
 .logo-footer {
   display: inline-flex;
   align-items: center;
@@ -851,7 +856,7 @@ section-two-icon .buttons:focus {
   background-color: var(--green);
 }
 
-/* =====footer form============== */
+/* --Footer form-- */
 .footer-button {
   display: flex;
   flex-direction: column;
@@ -947,7 +952,7 @@ section-two-icon .buttons:focus {
   color: var(--white);
 }
 
-/* ======Social media=======*/
+/* --Social media--*/
 .social-list-footer {
   display: flex;
   justify-content: center;
@@ -958,7 +963,7 @@ section-two-icon .buttons:focus {
   transition: background-color var(--animation);
 }
 
-/*-- Address in Mobile menu --*/
+/*====== Address in Mobile menu =============*/
 
 .address-mobile-tel {
   color: var(--iris);
