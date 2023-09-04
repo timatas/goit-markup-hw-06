@@ -270,7 +270,7 @@ img {
 }
 @media only screen and (min-width: 1158px) {
   .main-section {
-    /* max-width: 1440px; */
+    max-width: 1440px;
     padding: 188px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -610,7 +610,7 @@ img {
   border-color: var(--ocean);
   color: var(--ocean);
 }
-@media only screen and (min-width: 768px) and (max-width: 1157.98) {
+@media only screen and (min-width: 768px) and (max-width: 1158px) {
   .container {
     width: 552px;
   }
